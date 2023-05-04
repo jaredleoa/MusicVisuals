@@ -62,6 +62,12 @@ public class CelebrationStation extends PApplet {
         camera(camPos.x, camPos.y, camPos.z, 0, 0, 0, 0, 1, 0);
         camAngle += camSpeed;
 
+        // Rotate the camera using the mouse
+        float dx = mouseX - prevX;
+        float dy = mouseY - prevY;
+        float sensitivity = 0.005f;
+        rotateY(dx * sensitivity);
+        rotateX(-dy * sensitivity);
 
         // Draw a rotating wireframe box
         noFill();
