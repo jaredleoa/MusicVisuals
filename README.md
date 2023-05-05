@@ -27,72 +27,13 @@ The CelebrationStation visual was created to be another visual that is interact 
 Another exciting adition was the camera movement I added. This allows the user to rotate the box and its contents in a 360 degree way. The box can also be rotated faster by using the up arrow, and slower using the down arrow. If the user wants to they can also use the mouse scroll button to zoom into the box, and even get inside of it! This gives this visual an even greater 360 feel which I find quite cool.
 
 # What I am most proud of in the assignment
+Jared:
+I am most proud of how ambitious we were as a collective in trying to get a visual that was super interactive for the user. I am really happy with how the Warped Space visual turned out and I think it has a really unique twist to it. I am incredibly disappointed that we could not get everything to work and match the music, which is something I regret, but I don't regret trying to make it as much of an enjoyable and interactive experience as possible, even though it turned out to be too complicated to put together in the end. My goal is to put at least my visuals together and get it to work with the music in my own time
 
-# Markdown Tutorial
+Demi:
 
-This is *emphasis*
-
-This is a bulleted list
-
-- Item
-- Item
-
-This is a numbered list
-
-1. Item
-1. Item
-
-This is a [hyperlink](http://bryanduggan.org)
-
-# Headings
-## Headings
-#### Headings
-##### Headings
-
-This is code:
-
-```Java
-public void render()
-{
-	ui.noFill();
-	ui.stroke(255);
-	ui.rect(x, y, width, height);
-	ui.textAlign(PApplet.CENTER, PApplet.CENTER);
-	ui.text(text, x + width * 0.5f, y + height * 0.5f);
-}
-```
-
-So is this without specifying the language:
-
-```
-public void render()
-{
-	ui.noFill();
-	ui.stroke(255);
-	ui.rect(x, y, width, height);
-	ui.textAlign(PApplet.CENTER, PApplet.CENTER);
-	ui.text(text, x + width * 0.5f, y + height * 0.5f);
-}
-```
-
-This is an image using a relative URL:
-
-![An image](images/p8.png)
-
-This is an image using an absolute URL:
-
-![A different image](https://bryanduggandotorg.files.wordpress.com/2019/02/infinite-forms-00045.png?w=595&h=&zoom=2)
 
 This is a youtube video:
 
 [![YouTube](http://img.youtube.com/vi/J2kHSSFA4NU/0.jpg)](https://www.youtube.com/watch?v=J2kHSSFA4NU)
-
-This is a table:
-
-| Heading 1 | Heading 2 |
-|-----------|-----------|
-|Some stuff | Some more stuff in this column |
-|Some stuff | Some more stuff in this column |
-|Some stuff | Some more stuff in this column |
-|Some stuff | Some more stuff in this column |
 
