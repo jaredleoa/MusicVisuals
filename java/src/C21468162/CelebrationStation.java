@@ -4,6 +4,7 @@ import processing.core.PApplet;
 import processing.core.PVector;
 import processing.event.MouseEvent;
 import java.util.ArrayList;
+import ddf.minim.*;
 
 public class CelebrationStation extends PApplet {
 
@@ -15,12 +16,17 @@ public class CelebrationStation extends PApplet {
     float orbitRadius = 1300;
     PVector camPos;
     float prevX, prevY;
+    Minim minim;
+    AudioPlayer song;
 
     public void settings() {
         size(800, 600, P3D);
     }
 
     public void setup() {
+        minim = new Minim(this);
+        song = minim.loadFile("InitialD-KillingMyLove.mp3");
+        song.play();
         smooth();
         camPos = new PVector(0, 0, orbitRadius);
     }
