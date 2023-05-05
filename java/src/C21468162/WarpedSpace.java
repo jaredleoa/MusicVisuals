@@ -2,17 +2,24 @@ package C21468162;
 
 import processing.core.PApplet;
 import processing.event.MouseEvent;
+import ddf.minim.*;
 
 public class WarpedSpace extends PApplet {
 	
 	double speed;
 	Star[] stars;
+	Minim minim;
+    AudioPlayer song;
 	
 	public void settings() {
 		size(800,600);  //screen width and height
 	}
 	
 	public void setup() {
+		minim = new Minim(this);
+        song = minim.loadFile("InitialD-KillingMyLove.mp3");
+		song.cue(40000);
+        song.play();
 		speed = 10;	//increase speed to make the particles appear longer
 		stars = new Star[2500];
 		for (int i = 0; i < 2500; i++) stars[i] = new Star();
@@ -25,6 +32,11 @@ public class WarpedSpace extends PApplet {
 		for (Star s : stars) {
 			s.update();
 			s.show();
+		}
+
+		// Check if audio has played for more than 58.3 seconds
+		if (song.position() > 58300) {
+			song.pause();
 		}
 	}
 	

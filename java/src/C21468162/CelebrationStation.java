@@ -26,6 +26,7 @@ public class CelebrationStation extends PApplet {
     public void setup() {
         minim = new Minim(this);
         song = minim.loadFile("InitialD-KillingMyLove.mp3");
+		song.cue(58000);
         song.play();
         smooth();
         camPos = new PVector(0, 0, orbitRadius);
@@ -95,6 +96,11 @@ public class CelebrationStation extends PApplet {
             // Change box to circle
             ellipse(0, 0, renderBox, renderBox);
         }
+
+        // Check if audio has played for more than 84seconds
+		if (song.position() > 84500) {
+			song.pause();
+		}
     }
 
     public void mouseWheel(MouseEvent event) {
