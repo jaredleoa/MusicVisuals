@@ -1,9 +1,11 @@
 # Music Visualiser Project
 
 Name: Jared Leonard
+
 Student Number: C21468162
 
 Name: Demi Aina
+
 Student Number: C21725659
 
 # Description of the assignment
