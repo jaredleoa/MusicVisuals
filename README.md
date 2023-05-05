@@ -14,7 +14,7 @@ To run the program, unfortunately you have to edit the main file each time to di
 
 # How it works
 
-#WarpedSpace
+## WarpedSpace
 ![Screenshot 2023-05-05 091807](https://user-images.githubusercontent.com/88289448/236409355-c34f5190-4f6b-4b21-bca0-02ec49c8c0bd.png)
 
 The WarpedSpace visual is a visual that is inspired by Star Wars, when they move through Hyperspace. My goal was to make this feels as dynamic and interactive as possible, as I am aware that a lot of people are inspired to make a visual similar to this. Therefore I wanted to make mine as unique and cool as possible. When they visual starts, the user can use the mousescroll wheel to achieve different things. The first is that when they scroll up, the star particles start moving much faster towards the screen, and the color of the particles randomly change. On the other hand, if the user decides to scroll down on the mousewheel, the particles start slowing down and appear to separate from each other, while also randomly changing colours. I am really happy with the overall functionality of this visual and how interactive it is.
